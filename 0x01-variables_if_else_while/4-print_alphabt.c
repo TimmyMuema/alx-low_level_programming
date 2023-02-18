@@ -1,15 +1,15 @@
 #include <stdio.h>
 
 /**
- *  main -Program entry point
+ * main - Entry point
  *
- *  Retur: on success. Error code otherwise
+ * Return: Always 0 (Success)
  */
-int main (void)
+int main(void)
 {
 	char ch = 'a';
 
-	while(ch <= 'z')
+	while (ch <= 'z')
 	{
 		if (ch != 'e' && ch != 'q')
 		{
@@ -21,3 +21,4 @@ int main (void)
 
 	return (0);
 }
+
