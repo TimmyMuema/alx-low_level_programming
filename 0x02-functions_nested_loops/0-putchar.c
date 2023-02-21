@@ -1,7 +1,13 @@
 #include <stdio.h>
 #include "main.h"
 
-/* This program prints the word "_putchar" followed by a newline character */
+/**
+ * main - Entry point
+ *
+ * Description: prints the word "_putchar" followed by a newline character
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
