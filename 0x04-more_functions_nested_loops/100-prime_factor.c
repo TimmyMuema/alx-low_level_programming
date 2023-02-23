@@ -9,22 +9,22 @@
 
 void largest_prime_factor(void)
 {
-        long int num = 612852475143, i;
+	long int num = 612852475143, i;
 
-        for (i = 2; i <= num; i++)
-        {
-                if (num % i == 0)
-                {
-                        while (num % i == 0)
-                        {
-                                num /= i;
-                        }
-                        if (num == 1 || num == i)
-                        {
-                                printf("%ld\n", i);
-                                break;
-                        }
-                }
-        }
+	for (i = 2; i <= num; i++)
+	{
+		if (num % i == 0)
+		{
+			while (num % i == 0)
+			{
+				num /= i;
+			}
+			if (num == 1 || num == i)
+			{
+				printf("%ld\n", i);
+				break;
+			}
+		}
+	}
 }
 
