@@ -1,18 +1,31 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "main.h"
+
 /**
-* main - prints all received arguments.
-* @argc: number of arguments received.
-* @argv: array if size argc, containing all arguments received.
-*
-* Return: 0 on success.
-*/
+ * count_args - counts the number of arguments passed into the program
+ * @argc: arg count
+ * Return: count of arguments
+ */
+int count_args(int argc)
+{
+    return (argc - 1);
+}
+
+/**
+ * main - prints the number of arguments passed into the program
+ * @argc: arg count
+ * @argv: args passed as an array of strs
+ * Return: 0;
+ */
 int main(int argc, char *argv[])
 {
-	int i;
+    int count;
 
-	for (i = 0; i < argc; i++)
-	{
-		printf("%s\n", argv[i]);
-	}
-	return (0);
+    count = count_args(argc);
+
+    printf("%d\n", count);
+
+    return (0);
 }
+
